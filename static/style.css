@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+.nav{
+    background-color: rgb(149 164 186);
+} 
+.nav li a{
+color: black;
+font-family: 'Edu NSW ACT Foundation';
+}
+ .nav li a:hover{
+    color: silver;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+li{
+    list-style: none;
+    margin: 0.5rem 3.4rem;
+    font-size: 2.0rem;
+}
+a{
+    text-decoration: none;
+}
+#section{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    background: url('/static/section2.jpg.jpg') center/cover no-repeat;
+    height: 66.8rem;
+   margin-bottom: 0rem -6.2rem;
+}
+.h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.4rem;
+    font-family: 'Edu NSW ACT Foundation';
+    color: #1a68de;
+
+}
+.h2{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: 'Edu NSW ACT Foundation';
+    display: flex;
+    justify-content: center;
+}
+.h4{
+    color: white;
+    font-size: 3.6rem;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+  width: 102%;
+  height: 3.4rem;
+  display: flex;}
+.img{
+    font-size: 2.9rem;
+    text-align: center;
+    font-family: 'Edu NSW ACT Foundation';
+    margin: 0rem 0.2rem;
+}
+#msection{
+    height: 41rem;
+    padding-bottom: 0.9rem;
+    background-color: slategrey;
+    background: url("/static/section.jpg.jpg") center/cover no-repeat;
+}
+.box p{
+    text-align: center;
+    font-size: 3.3rem;
+    padding:  6.5rem 4.6rem;
+    color: #a6d5d0;
+}
+.box{ 
+   font-size: 1.0rem;
+   display: flex;
+   justify-content: center;
+   margin: 7.0rem 0rem;
+   font-family: 'Edu NSW ACT Foundation';
+   
+   }
+#mysection{
+    height: 30rem;
+    background-color: black;
+    font-family: 'Edu NSW ACT Foundation';
+   }
+.sp{
+    height: 18rem;
+    margin: 3.4rem 0rem; 
+   }
+.sp img{
+    height: inherit;
+    display: grid;
+    grid-auto-flow: column;
+    /* margin: 0rem 66.0rem; */
+
+   }
+footer{
+    background-color:rgb(133, 180, 213);
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Edu NSW ACT Foundation';
+   }
+   h3{
+    margin: 0px 6px;
+   }
+@media (max-width:1000px) and (min-width:800px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px) and (min-width:480px) {
+    html{
+        font-size: 35%;
+    }
+}
+    .sp img{
+        margin: 0rem 71rem;
+    }
+  
+ 
