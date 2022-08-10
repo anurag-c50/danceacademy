@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 *{
     margin: 0rem;
@@ -100,9 +101,8 @@ a{
    }
 .sp img{
     height: inherit;
-    display: grid;
-    grid-auto-flow: column;
-    /* margin: 0rem 66.0rem; */
+    display: flex;
+    margin: 0rem 66.0rem;
 
    }
 footer{
@@ -118,7 +118,7 @@ footer{
 @media (max-width:1000px) and (min-width:800px){
     html{
         font-size: 55%;
-    }
+       }
 }
 @media (max-width:768px) and (min-width:480px) {
     html{
@@ -128,5 +128,21 @@ footer{
     .sp img{
         margin: 0rem 71rem;
     }
-  
- 
+    @media (max-width:480px) and (min-width:200px){
+        html{
+            font-size: 30%;
+                }
+        #msection{
+            padding-bottom: 31.9rem;
+        }
+    }
+    @media (max-width:400px) and (min-width:302px){
+        .sp img{
+            margin: 0rem 44rem;
+        }
+    }
+    @media (max-width:432px) and (min-width:372px){
+        .sp img{
+            margin: 0rem 42rem;
+        }
+    }
