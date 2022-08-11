@@ -6,36 +6,81 @@ html{
 *{
     margin: 0rem;
     padding: 0rem;
+    box-sizing: border-box;
 }
-.nav{
+img{
+    height: 4vh;
+}
+nav{
     background-color: rgb(149 164 186);
+    display: flex;
+    justify-content: space-between; 
+    font-family: 'Edu NSW ACT Foundation';
+}
+.img1{
+    display: none;
+    font-size: 34px;
 } 
-.nav li a{
-color: black;
-font-family: 'Edu NSW ACT Foundation';
+.img{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    position: absolute;
+    margin-left: 50px;
+    font-size: 25px;
+    
 }
- .nav li a:hover{
-    color: silver;
-}
-ul{
+nav .mainMenu{
     display: flex;
     flex-direction: row;
-    text-align: center;
-}
-li{
     list-style: none;
-    margin: 0.5rem 3.4rem;
-    font-size: 2.0rem;
+    position: absolute;
+    margin: -5px 105px;
 }
-a{
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 10px 15px;
     text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    transition: 0.2s ease;
 }
+nav .mainMenu li a:hover{
+    background-color: silver;
+    margin: -4px 0px;
+}
+nav .openMenu{
+
+    font-size: 2rem;
+    margin: 0px 20px ;
+    display: none;
+    cursor: pointer;
+    
+}
+nav .mainMenu .closeMenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu li a:hover{
+    background-color: silver;
+}
+.fa-facebook:hover{color: rgb(0,110,255);}
+.fa-twitter:hover{color: rgb(86,154,243);}
+.fa-instagram:hover{color: rgb(255,0,191);}
+.fa-github:hover{color: rgb(255,123,0);}
+
 #section{
     flex-direction: column;
     justify-content: center;
     display: flex;
     background: url('/static/section2.jpg.jpg') center/cover no-repeat;
-    height: 66.8rem;
+    height: 92vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
    margin-bottom: 0rem -6.2rem;
 }
 .h3{
@@ -45,6 +90,7 @@ a{
     font-size: 3.4rem;
     font-family: 'Edu NSW ACT Foundation';
     color: #1a68de;
+    position: sticky;
 
 }
 .h2{
@@ -60,18 +106,15 @@ a{
     display: flex;
     justify-content: center;
 }
-.logo{
-  width: 102%;
-  height: 3.4rem;
-  display: flex;}
-.img{
-    font-size: 2.9rem;
-    text-align: center;
-    font-family: 'Edu NSW ACT Foundation';
-    margin: 0rem 0.2rem;
-}
+
 #msection{
-    height: 41rem;
+    height: 68vh;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     padding-bottom: 0.9rem;
     background-color: slategrey;
     background: url("/static/section.jpg.jpg") center/cover no-repeat;
@@ -91,23 +134,32 @@ a{
    
    }
 #mysection{
-    height: 30rem;
+    height: 30vh;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: black;
     font-family: 'Edu NSW ACT Foundation';
    }
 .sp{
-    height: 18rem;
+    height: 26vh;
     margin: 3.4rem 0rem; 
    }
 .sp img{
     height: inherit;
     display: flex;
-    margin: 0rem 66.0rem;
+   width: 36%;
+   justify-content: space-between;
+   position: relative;
+   margin-left: 153px;
 
    }
 footer{
     background-color:rgb(133, 180, 213);
-    height: 3rem;
+    height: 3vh;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Edu NSW ACT Foundation';
@@ -115,39 +167,69 @@ footer{
    h3{
     margin: 0px 6px;
    }
-@media (max-width:1000px) and (min-width:800px){
+   @media (max-width:900px) and (min-width:785px) {
     html{
-        font-size: 55%;
-       }
-}
-@media (max-width:768px) and (min-width:480px) {
-    html{
-        font-size: 35%;
+        font-size:53%;
     }
-}
+   }
+   @media (max-width:784px) and (min-width:600px) {
+    html{
+        font-size:42%;
+    }
+   }
+   @media (max-width:599px) and (min-width:500px) {
+    html{
+        font-size:35%;
+    }
+   }
+   @media (max-width:499px) and (min-width:300px) {
+    html{
+        font-size:25%;
+    }
+   }
+   /* @media (max-width:1341px) and (min-width:1053px) {
     .sp img{
-        margin: 0rem 71rem;
-    }
-    @media (max-width:480px) and (min-width:200px){
-        html{
-            font-size: 30%;
+        margin: 0rem 47rem;
+    } */
+}
+            @media(max-width:1200px){
+                nav .mainMenu{
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -105px;
+                left: -105px;
+                z-index: 10;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color:  rgb(149 164 186);;
+                transition: top 1s ease 0s;
+                display: none;
+                font-size: 46%;
                 }
-        #msection{
-            padding-bottom: 31.9rem;
-        }
-    }
-    @media (max-width:400px) and (min-width:302px){
-        .sp img{
-            margin: 0rem 44rem;
-        }
-    }
-    @media (max-width:432px) and (min-width:372px){
-        .sp img{
-            margin: 0rem 42rem;
-        }
-    }
-    @media (max-width:1200px) and (min-width:1000px){
-        .sp img{
-            margin: 0rem 30rem;
-        }
-    }
+                nav .mainMenu .closeMenu{
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+                nav .openMenu{
+                    display: block;
+                    display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                }
+                nav .mainMenu li a:hover{
+                    background: none;
+                    color: silver;
+                    font-size: 2rem;
+                }
+              .icons i{
+                display: inline-block;
+                padding: 12px;
+              }
+              .img1{
+                display: block;
+              }
+            }
