@@ -114,7 +114,7 @@ nav .mainMenu li a:hover{
 .box p{
     text-align: center;
     font-size: 3.3rem;
-    padding:  6.5rem 4.6rem;
+    padding:  6.5rem 10.6rem;
     color: #a6d5d0;
 }
 .box{ 
@@ -141,7 +141,7 @@ nav .mainMenu li a:hover{
    width: 36%;
    justify-content: space-between;
    position: relative;
-   margin-left: 153px;
+   margin-left: 11.3rem;
 
    }
 footer{
@@ -154,26 +154,14 @@ footer{
    h3{
     margin: 0px 6px;
    }
-   /* @media (max-width:900px) and (min-width:785px) {
-    html{
-        font-size:53%;
+    @media (max-width:1000px) and (min-width:300px) {
+        .box p{
+            text-align: center;
+            font-size: 2.6rem;
+            padding:  12.5rem 0.6rem;
+            color: #a4fff5;
+        }
     }
-   }
-   @media (max-width:784px) and (min-width:600px) {
-    html{
-        font-size:42%;
-    }
-   }
-   @media (max-width:599px) and (min-width:500px) {
-    html{
-        font-size:35%;
-    }
-   }
-   @media (max-width:499px) and (min-width:300px) {
-    html{
-        font-size:25%;
-    }
-   } */
        @media(max-width:1200px){
                 nav .mainMenu{
                 height: 100vh;

@@ -130,7 +130,7 @@ footer{
     opacity: 0.5;
 }
 
-@media(max-width:1200px){
+@media(max-width:1000px){
     nav .mainMenu{
     height: 100vh;
     position: fixed;
