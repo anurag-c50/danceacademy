@@ -85,7 +85,6 @@ img{
 }
 .form:hover{
     background-color:#ddebea;
-    border: 0.3rem solid #54696a;
 }
 .form::placeholder{
 color: rgb(11, 16, 19);
@@ -113,9 +112,12 @@ color: rgb(11, 16, 19);
     height: 4vh;
 }
 .btn{
-    background-color:#ddebea;
     border: 0.3rem solid #54696a;
     border-radius: 1.0rem;
+    background: space;
+}
+.btn:hover{
+    background-color:#ddebea;
 }
 footer{
     background-color:rgb(133, 180, 213);
